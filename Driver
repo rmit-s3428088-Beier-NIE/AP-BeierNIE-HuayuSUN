@@ -1,0 +1,171 @@
+package Ozlympic;
+import java.lang.reflect.Array;
+import java . util.*;
+
+import Athlete.Athlete;
+import Athlete.Cyclist;
+import Athlete.Swimmer;
+
+public class Driver {
+  
+	
+	 //Menu choose
+     public void gameMenu(){
+    	 
+    	 System.out.println("Olympic Game"
+		            +"\n"+ "1. Select a game to run"
+		            +"\n"+"2. Predict the winner of the game"
+					+"\n"+"3. Star the game"
+		            +"\n"+"4. Display the final results of all game"
+					+"\n"+"5. Display the points of all athletes"
+		            +"\n"+"6. Exit"
+					+"\n"+"Enter an option:");
+			}
+	
+	Scanner menu = new Scanner(System.in);
+	int menuChoose = menu.nextInt();
+    //如果是文字的话
+	//Insert incorrect, choose again
+	void chooseManuAgain(){
+		while(menuChoose<1||menuChoose>6){
+			System.out.print("out of range, please enter again:");
+			}
+}
+//if()
+	
+	//Insert correct, start
+	  void chooseMenu(){
+		switch(menuChoose){
+		 case 1: 
+		       chooseGame();
+		       break; 
+		 case 2: 
+		       predictWinner(); 
+		       break; 
+		 case 3: 
+		       startGame(); 
+		       break; 
+		 case 4: 
+		       displayFinalResult(); 
+		       break; 
+		 case 5: 
+		       displayPoint(); 
+		       break; 
+		 case 6: 
+		       Exit(); 
+		       break;
+		   
+		}
+	}
+	
+	
+	//Option 1 Choose a game from three games		
+       void chooseGame(){		    
+	 System.out.println("Please choose a game to run"
+	            +"f"+"1.Swimming"
+	            +"f"+"2.Running"
+	            +"f"+"3.Cycling");
+     }
+	Scanner gameChoose = new Scanner(System.in);
+	int choose = gameChoose.nextInt();
+		
+	String gameSelect;{
+	if(choose == 1){
+			gameSelect = "swim";
+		}else if(choose ==2){
+			gameSelect = "cycly";
+		}else if(choose ==3){
+			gameSelect = "run";
+		}else{
+			System.out.println("Sorry,wrong answer");
+		}
+	}
+		
+	//Option 2 Choose a predict winner
+	void predictWinner(){
+		System.out.println("Please predict a winner from above:");
+		if(gameSelect == "swim"){
+			Swimmer.getSwimmerList();
+		}else if(gameSelect == "cycly"){
+			Cyclist.getCyclistList();
+		}else if(gameSelect == "run"){
+			//Sprinter.getSprinterList();
+		}
+		Scanner expectWinner = new Scanner(System.in);
+		int expectWinnerID = expectWinner.nextInt();
+		
+			}
+	
+	//Option 3 Game Start		
+	String startGame(){
+		if(gameSelect== "Swim"){
+			return swimGameStart();
+		}else if(gameSelect == "Cycly"){
+			return cyclistGameStart();
+		}else if(gameSelect =="Run"){
+			return sprinterGameStart();
+        }   
+	}       
+		
+	    //运行游戏种类
+	public String cyclistGameStart(){
+		return gameSelect;}	
+	public String sprinterGameStart(){
+		return gameSelect;}
+		
+	public String swimGameStart(){
+		  
+		
+		// 每个游戏有4-8个运动员， 随机个数 randNum
+	        Random athletesNum = new Random();
+		    int randNum = athletesNum.nextInt(5)+4;
+		    Athlete[] SwimmerList=new Athlete[randNum];
+		    { 
+		    for( int i=0;i<randNum;i++){
+				//SwimmerList[i]=Swimmer.getSwimmerList();   
+			 }	
+			 
+			 
+			 //游泳比赛时间为10-20秒
+		    Random swim = new Random();
+		    int swimmingTime = swim.nextInt(11)+10;
+			
+		
+	       
+	         ArrayList<Integer> list = new ArrayList<Integer>(randNum);
+	         list.add(swimmingTime);
+	    
+	         int maximum = Collections.max(list);
+
+	         System.out.println(maximum);
+		    
+	         
+	    
+	         //记录时间
+	         //Scanner record = new Scanner(System.in);
+	         //int SwimWinnerTime = record.nextInt();
+			//return gameSelect;
+	        /*for(int i=0;i<game.numberAthlete;i++){//对比赛分数进行从小到大排序
+			for(int j=1;j<game.numberAthlete-1;j++){
+				if(athleteScoreArray[i]>athleteScoreArray[j]){
+					interNumber=athleteScoreArray[j];
+					athleteScoreArray[j]=athleteScoreArray[i];
+					athleteScoreArray[i]=interNumber;*/ 
+	   
+
+	
+
+	//Option 4 
+	void displayFinalResult(){
+		
+	}
+	//Option 5
+	void displayPoint(){
+		}
+	//Option 6
+	void Exit(){
+		}
+	
+	}
+		
+		
