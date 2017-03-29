@@ -1,0 +1,13 @@
+package Ozlympic;
+import java.lang.reflect.Array;
+import java.util.*;
+public class Officials extends Participants{
+      
+	public Officials(int ID, String name, int age,String state,String gameID){
+    	super(ID, name, age,state);
+        
+	}
+} 
+    
+
+  
