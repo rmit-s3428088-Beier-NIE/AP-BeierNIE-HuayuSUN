@@ -1,0 +1,38 @@
+package Athlete;
+import java.util.ArrayList;
+import Ozlympic.*;
+import Athlete.*;
+
+import Ozlympic.Participants;
+
+public  class Athlete extends Participants{
+
+    private int point;
+	private double gameTime;
+    Athlete(int ID, String name,int age,String state,double gameTime,int point){
+		super(ID,name, age,state);
+		this.point = point;
+		this.gameTime = gameTime;
+	
+		
+	
+	}
+	public int getPoint() {
+		return point;
+	}
+	public void setPoint(int point) {
+		this.point = point;
+		
+	}
+	public double getGameTime(int ID) {
+		return gameTime;
+	}
+	public void setGameTime(double time) {
+		this.gameTime= gameTime;
+	}	
+	
+	}
+    
+    
+
+	
