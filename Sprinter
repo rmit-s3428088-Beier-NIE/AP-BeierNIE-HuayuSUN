@@ -1,0 +1,38 @@
+package Athlete;
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Sprinter extends Athlete{
+	 Random running = new Random();
+	    int runningTime = running .nextInt(101)+100;
+	
+	    public Sprinter(int ID, String name,int age,String state, double time, int point){
+	    	super(ID, name, age,state,time,point);
+	    }
+	    
+	    public static void getSprinterList(){
+	    	Sprinter a1 =new Sprinter(301,"Joy", 19,"VIC",0,0);
+	    	Sprinter a2 =new Sprinter(302,"Kitte",28,"VIC",0,0);
+	   		Sprinter a3=new Sprinter(303,"Jakie",22,"ACT",0,0);
+	   		Sprinter a4 =new Sprinter(304,"Bob",23,"QLD",0,0);
+	   		Sprinter a5=new Sprinter(305,"Anna",25,"NSW",0,0);
+	   		Sprinter a6=new Sprinter(306,"Betty",20,"VIC",0,0);
+	   		Sprinter a7 = new Sprinter(307,"Doris",24,"VIC",0,0);
+    		Sprinter a8 = new Sprinter(308, "Johnny",29,"QLD",0,0);
+	    		
+	        ArrayList<Sprinter> rList = new ArrayList();
+	    	          
+	    	          rList.add(a1);
+	    	          rList.add(a2);
+	    	          rList.add(a3);
+	    	          rList.add(a4);
+	    	          rList.add(a5);
+	    	          rList.add(a6);
+	    	          rList.add(a7);
+	    	          rList.add(a8);
+	    	          
+	    	          
+	    	    //Boolean bool_list = sList.containsAll(sList);
+	    	    System.out.println(rList);    
+}
+}
