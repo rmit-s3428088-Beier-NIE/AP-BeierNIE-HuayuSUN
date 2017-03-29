@@ -1,0 +1,10 @@
+package Athlete;
+
+public class SuperAthlete extends Athlete{
+
+	public SuperAthlete(int ID, String name,int age,String state, double time, int point){
+		super(ID, name, age,state,time,point);
+		// TODO Auto-generated constructor stub
+	}
+
+}
