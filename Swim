@@ -1,0 +1,36 @@
+package Game;
+
+import java.util.*;
+
+import Athlete.Swimmer;
+
+
+public class Swim extends Game{
+	public Swim(int ID, int gameID,int gameTime, int point){
+    	super(ID,gameID,gameTime,point);
+	}	
+	
+	
+	public void getGameStart(){
+	     Swim swim = new Swim;
+	     Swim.getGameTime();
+		
+	     //游泳比赛时间为10-20秒
+    	Random swimTime = new Random();
+        getGameTime() = swim.nextInt(11)+10; 
+        
+    }
+	
+	// 每个游戏有4-8个运动员， 随机个数 randNum
+    Random athleteNum = new Random();
+    int swimmerNumber = athleteNum.nextInt(5)+4;
+    { 
+    for( int i=0;i<swimmerNumber;i++){
+    	Swimmer[] SwimmerList=new Swimmer[swimmerNumber];
+    	//SwimmerList[i]= SwimmerList[swimmerNumber];
+    	
+	 }	
+    }
+} 
+   
+    
