@@ -1,36 +1,48 @@
 package Game;
-
 import java.util.*;
 
-import Athlete.Swimmer;
+import Participants.*;
 
 
 public class Swim extends Game{
-	public Swim(int ID, int gameID,int gameTime, int point){
+	
+	@Override
+	public int getGameTime() {
+		// TODO Auto-generated method stub
+		return super.getGameTime();
+	}
+	
+	static Random swim = new Random();
+	public Swim(int ID, ArrayList<Swimmer> sList, int gameID,int gameTime, int point){
     	super(ID,gameID,gameTime,point);
+    	
 	}	
 	
 	
-	public void getGameStart(){
-	     Swim swim = new Swim;
-	     Swim.getGameTime();
-		
-	     //游泳比赛时间为10-20秒
-    	Random swimTime = new Random();
-        getGameTime() = swim.nextInt(11)+10; 
-        
-    }
-	
-	// 每个游戏有4-8个运动员， 随机个数 randNum
-    Random athleteNum = new Random();
-    int swimmerNumber = athleteNum.nextInt(5)+4;
+	public  void gameSwimStart(){
+	    
+   //Swim game time is between 10-20sec
+      setGameTime(swim.nextInt(11)+10);
+      ArrayList<Swimmer> sList = Swimmer.getSwimmerList();
+      	
+  	}
+
+  // There have 4-8 athlete per game. randomly choose athlete
+    int swimmerNumber = swim.nextInt(5)+4;
     { 
     for( int i=0;i<swimmerNumber;i++){
-    	Swimmer[] SwimmerList=new Swimmer[swimmerNumber];
-    	//SwimmerList[i]= SwimmerList[swimmerNumber];
-    	
-	 }	
+    	ArrayList<Swim> spList = new ArrayList(swimmerNumber);	
+
     }
-} 
-   
+    }
     
+    public static int compare(Object arg0, Object arg1) {
+    	Swim swim0 =(Swim)arg0;
+        Swim swim1 =(Swim)arg1;
+      return Integer.compare(swim0.getGameTime(), swim1.getGameTime());	
+     
+    
+    }
+    
+}
+	
