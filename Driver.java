@@ -148,7 +148,6 @@ public class Driver {
 		} else {
 			System.out.println("Your prediction winner is: ");
 			System.out.println("ID: " + Games.get(Games.size() - 1).getPredWinner().getID() + "   Name :" + Games.get(Games.size() - 1).getPredWinner().getName());
-			System.out.println("Oops,wrong prediction.");
 
 			ArrayList<String> rankFirstAthletesIDs = new ArrayList<String>();
 
