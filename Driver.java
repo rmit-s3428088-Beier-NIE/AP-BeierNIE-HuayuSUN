@@ -1,4 +1,4 @@
-//Wrote by Huayu Sun, Beier Nie, this class is driver class that archive functionalities of the whole program.
+//Wrote by Huayu Sun, this class is driver class that archive functionalities of the whole program.
 import java.util.*;
 
 public class Driver {
