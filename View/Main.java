@@ -287,9 +287,9 @@ public class Main extends Application {
 					} else
 						throw new WrongTypeException();
 				}
-				if (SelectedAthlete.size() <= TooFewAthleteException)
+				if (SelectedAthlete.size() < TooFewAthleteException)
 					throw new TooFewAthleteException();
-				else if (SelectedAthlete.size() >= GameFullException)
+				else if (SelectedAthlete.size() > GameFullException)
 					throw new GameFullException();
 				else if (SelectedOfficial == null)
 					throw new NoRefereeException();
