@@ -1,7 +1,6 @@
-# assignment1
+# assignment2
  To run the game, user should follow the following steps:
  1.select a game to run and then select a game type you want
- 2.predict the winner, select the athlete number and go back to mainmenu
- 3.start the game or you can select a new game if you want
- 4.you can check the finalresult and the points of all athletes
- 5.quit
+ 2.select 4~8 athlete and 1 referee and press start game
+ 3.you can check the finalresult and the points of all athletes at main menu
+
